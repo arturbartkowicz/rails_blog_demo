@@ -1,1 +1,11 @@
-<h1 class="title">Something New</h1>
+<h1 class="title">Blog Index</h1>
+
+<section class="section">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <p><%= link_to post.title, post %></p>
+      <p><%= post.content %></p>
+      </ br> 
+    <% end %>
+  </div>
+<section>
